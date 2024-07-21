@@ -1,5 +1,10 @@
-import Box from "../src/components/Box";
-import theme from "../src/theme/theme";
+import Box from "@src/components/Box";
+import theme from "@src/theme/theme";
+import styled from "styled-components";
+
+const MyComponent = styled.div`
+  color: purple;
+`;
 
 export default function Home() {
   return (
@@ -7,9 +12,14 @@ export default function Home() {
       tag="main"
       styleSheet={{
         fontFamily: theme.typography.fontFamily,
+        backgroundColor: {
+          xs: "red",
+          sm: "yellow",
+          md: "blue",
+        },
       }}
     >
-      Oi
+      <MyComponent>OI</MyComponent>
     </Box>
   );
 }

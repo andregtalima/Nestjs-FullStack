@@ -1,8 +1,5 @@
 import React from "react";
-
-interface StyleSheet {
-  fontFamily: string;
-}
+import { StyleSheet } from "@src/theme/StyleSheet";
 
 interface BoxProps {
   tag: any;
